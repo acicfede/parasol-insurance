@@ -1,0 +1,84 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: admin-rolebinding-alessia-pacella
+  namespace: mongo-db
+subjects:
+  - kind: User
+    name: alessia.pacella
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: mongo-db-admin
+  apiGroup: rbac.authorization.k8s.io
+You can create similar RoleBinding resources for the other users:
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: admin-rolebinding-m-iadarola
+  namespace: mongo-db
+subjects:
+  - kind: User
+    name: m.iadarola
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: mongo-db-admin
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: admin-rolebinding-giuseppe-zuccarello
+  namespace: mongo-db
+subjects:
+  - kind: User
+    name: giuseppe.zuccarello
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: mongo-db-admin
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: admin-rolebinding-miriam-di-giulio
+  namespace: mongo-db
+subjects:
+  - kind: User
+    name: miriam.di.giulio
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: mongo-db-admin
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: admin-rolebinding-f-a-moccia
+  namespace: mongo-db
+subjects:
+  - kind: User
+    name: f.a.moccia
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: mongo-db-admin
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: admin-rolebinding-sergio-pisciottano
+  namespace: mongo-db
+subjects:
+  - kind: User
+    name: sergio.pisciottano
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: mongo-db-admin
+  apiGroup: rbac.authorization.k8s.io
